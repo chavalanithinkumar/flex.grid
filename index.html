@@ -1,0 +1,112 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🎨 CSS Learning Playground</h1>
+    <p>Learn Flexbox & Grid by Playing with Controls</p>
+</header>
+
+<section class="container">
+
+    <!-- FLEXBOX SECTION -->
+    <div class="card">
+        <h2>📦 Flexbox Playground</h2>
+
+        <div class="controls">
+
+            <label>Flex Direction</label>
+            <select id="direction">
+                <option value="row">row</option>
+                <option value="column">column</option>
+            </select>
+
+            <label>Justify Content</label>
+            <select id="justify">
+                <option value="flex-start">flex-start</option>
+                <option value="center">center</option>
+                <option value="flex-end">flex-end</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+
+        </div>
+
+        <div class="flex-demo" id="flexDemo">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+        </div>
+
+    </div>
+
+    <!-- GRID SECTION -->
+    <div class="card">
+        <h2>🔲 Grid Playground</h2>
+
+        <div class="controls">
+
+            <label>Columns</label>
+            <input type="range" id="columns" min="1" max="5" value="3">
+
+            <label>Gap</label>
+            <input type="range" id="gap" min="0" max="40" value="10">
+
+        </div>
+
+        <div class="grid-demo" id="gridDemo">
+            <div class="grid-box">1</div>
+            <div class="grid-box">2</div>
+            <div class="grid-box">3</div>
+            <div class="grid-box">4</div>
+            <div class="grid-box">5</div>
+            <div class="grid-box">6</div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="concepts">
+
+    <h2>🧠 Quick Learning Guide</h2>
+
+    <div class="concept-card">
+        <h3>Flex Direction</h3>
+        <p>Controls whether items go left→right (row) or top→bottom (column).</p>
+    </div>
+
+    <div class="concept-card">
+        <h3>Justify Content</h3>
+        <p>Controls how items are positioned along the main axis.</p>
+    </div>
+
+    <div class="concept-card">
+        <h3>Space Between</h3>
+        <p>Pushes items apart with equal space between them.</p>
+    </div>
+
+    <div class="concept-card">
+        <h3>Grid Columns</h3>
+        <p>Controls how many columns the grid has.</p>
+    </div>
+
+    <div class="concept-card">
+        <h3>Gap</h3>
+        <p>Adds spacing between grid items.</p>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
